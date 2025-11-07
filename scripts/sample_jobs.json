@@ -1,0 +1,28 @@
+[
+  {
+    "id": "success-1",
+    "command": "echo 'Hello from QueueCtl'",
+    "priority": 10
+  },
+  {
+    "id": "invalid-cmd",
+    "command": "nonexistent_command_xyz",
+    "priority": 5,
+    "max_retries": 2
+  },
+  {
+    "id": "sleep-1",
+    "command": "powershell -Command Start-Sleep -Seconds 1; echo 'Task 1 complete'",
+    "priority": 3
+  },
+  {
+    "id": "sleep-2",
+    "command": "powershell -Command Start-Sleep -Seconds 1; echo 'Task 2 complete'",
+    "priority": 2
+  },
+  {
+    "id": "sleep-3",
+    "command": "powershell -Command Start-Sleep -Seconds 1; echo 'Task 3 complete'",
+    "priority": 1
+  }
+]
