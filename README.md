@@ -8,19 +8,19 @@ A production-ready CLI-based background job queue with automatic retries, dead l
 
 ## Features
 
-- ✅ **Job Queue Management**: Enqueue, list, and monitor background jobs
-- ✅ **Multi-Worker Support**: Run multiple parallel workers for high throughput
-- ✅ **Automatic Retries**: Exponential backoff with jitter for failed jobs
-- ✅ **Dead Letter Queue (DLQ)**: Isolate permanently failed jobs with retry capability
-- ✅ **Scheduled Jobs**: Schedule jobs to run at specific times
-- ✅ **Priority Queue**: Higher priority jobs execute first
-- ✅ **Timeout Support**: Global and per-job execution timeouts
-- ✅ **Output Capture**: Store stdout/stderr for debugging
-- ✅ **Persistent Storage**: SQLite database with crash recovery
-- ✅ **Lock Management**: Prevent duplicate processing with expiring locks
-- ✅ **Worker Registry**: Track active workers with heartbeats
-- ✅ **Configuration Management**: Runtime-configurable parameters
-- ✅ **Machine-Readable Output**: JSON output for all commands
+- **Job Queue Management**: Enqueue, list, and monitor background jobs
+- **Multi-Worker Support**: Run multiple parallel workers for high throughput
+- **Automatic Retries**: Exponential backoff with jitter for failed jobs
+- **Dead Letter Queue (DLQ)**: Isolate permanently failed jobs with retry capability
+- **Scheduled Jobs**: Schedule jobs to run at specific times
+- **Priority Queue**: Higher priority jobs execute first
+- **Timeout Support**: Global and per-job execution timeouts
+- **Output Capture**: Store stdout/stderr for debugging
+- **Persistent Storage**: SQLite database with crash recovery
+- **Lock Management**: Prevent duplicate processing with expiring locks
+- **Worker Registry**: Track active workers with heartbeats
+- **Configuration Management**: Runtime-configurable parameters
+- **Machine-Readable Output**: JSON output for all commands
 
 ## Installation
 
@@ -284,10 +284,6 @@ pytest tests/test_worker_retry.py::test_backoff_properties
 
 **Note for Windows Users**: Some tests may show file lock errors during cleanup due to SQLite's Write-Ahead Logging (WAL) mode keeping database files open. This is a Windows-specific test cleanup issue and does not affect the application's functionality. The core tests pass successfully, and the application runs perfectly on Windows.
 
-# Run property-based tests
-pytest tests/test_worker_retry.py::test_backoff_properties
-```
-
 ### Demo
 
 ```bash
@@ -353,12 +349,12 @@ Stdout/stderr truncated to 8KB to prevent database bloat. For large outputs, red
 
 All tests are green:
 
-- ✅ Job enqueueing with validation
-- ✅ Retry logic with exponential backoff
-- ✅ Parallel processing without duplicates
-- ✅ Data persistence across restarts
-- ✅ Dead letter queue operations
-- ✅ Property-based tests for backoff function
+- Job enqueueing with validation
+- Retry logic with exponential backoff
+- Parallel processing without duplicates
+- Data persistence across restarts
+- Dead letter queue operations
+- Property-based tests for backoff function
 
 ## Contributing
 
@@ -385,6 +381,6 @@ Design inspired by AWS SQS, Celery, and Temporal workflow engines.
 
 ---
 
-**Status:** Production-ready ✅  
+**Status:** Production-ready  
 **Version:** 0.1.0  
 **Last Updated:** November 2025
