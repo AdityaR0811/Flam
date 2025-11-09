@@ -1,9 +1,6 @@
 # QueueCtl
 
-A production-ready CLI-based background job queue with automatic retries, dead letter queue, scheduled jobs, and multi-worker support.
-
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+A production ready CLI based background job queue with automatic retries, dead letter queue, scheduled jobs, and multiworker support.
 
 ## Demo Video (Google Drive Link)
 
@@ -30,7 +27,7 @@ https://drive.google.com/file/d/11aSm96QTyEjTHTy49r03iH8rsx4nfRqs/view?usp=shari
 ### From Source
 
 ```bash
-git clone https://github.com/yourusername/queuectl.git
+git clone https://github.com/AdityaR0811/queuectl.git
 cd queuectl
 pip install -e ".[dev]"
 ```
@@ -369,10 +366,6 @@ Contributions welcome! Please:
 4. Ensure `make lint` and `make test` pass
 5. Submit a pull request
 
-## License
-
-MIT License - see LICENSE file for details.
-
 ## Acknowledgments
 
 Built with:
@@ -385,5 +378,4 @@ Design inspired by AWS SQS, Celery, and Temporal workflow engines.
 ---
 
 **Status:** Production-ready  
-**Version:** 0.1.0  
 **Last Updated:** November 2025
