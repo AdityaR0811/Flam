@@ -6,6 +6,10 @@ A production-ready CLI-based background job queue with automatic retries, dead l
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Demo Video (Google Drive Link)
+
+https://drive.google.com/file/d/11aSm96QTyEjTHTy49r03iH8rsx4nfRqs/view?usp=sharing
+
 ## Features
 
 - **Job Queue Management**: Enqueue, list, and monitor background jobs
