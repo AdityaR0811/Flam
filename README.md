@@ -356,16 +356,6 @@ All tests are green:
 - Dead letter queue operations
 - Property-based tests for backoff function
 
-## Contributing
-
-Contributions welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Write tests for new features
-4. Ensure `make lint` and `make test` pass
-5. Submit a pull request
-
 ## Acknowledgments
 
 Built with:
